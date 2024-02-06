@@ -21,7 +21,7 @@
    docker-compose up -d
    ```
    
-2.  Daily summary report Rest Api endpoint
+2. Daily summary report Rest Api endpoint
    ```
    GET localhost:8088/dailySummaryReportCsv
    ```
