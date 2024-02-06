@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    restart: on-failure:3
+    ports:
+      - ${APP_PORT:-8088}:8088
+    networks:
+      - report-service
+    volumes:
+      - .m2:/root/.m2
+
+networks:
+  report-service:
